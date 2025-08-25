@@ -1,11 +1,12 @@
 Trabalho de Linguagem de Programação II do curso de Análise e Desenvolvimento de Sistemas do IFPR Campus Umuarama. 
-Objetivo era criar um jogo da velha orientado a objeto com Java. 
-Para este projeto foi implementada o padrão de arquitetura MVC (Model-View-Controller), que é um padrão de arquitetura de software que divide uma aplicação em três componentes interligados para organizar 
-o código, melhorar a manutenção, a reutilização e o trabalho em equipa. O Model gere a lógica de negócio e os dados; a View apresenta esses dados ao utilizador; e o Controller atua como um intermediário, 
+Objetivo era criar um jogo da velha orientado a objeto com Java para 2 jogadores no mesmo computador, com interface gráfica (GUI) feita com Swing.
+
+Para este projeto foi implementada o padrão de arquitetura MVC (Model-View-Controller), que é um padrão de arquitetura de software que divide uma aplicação em três componentes 
+interligados para organizar o código, melhorar a manutenção, a reutilização e o trabalho em equipa. O Model gere a lógica de negócio e os dados; a View apresenta esses dados ao utilizador; e o Controller atua como um intermediário, 
 recebendo as entradas do utilizador e direcionando-as para o Model e a View.
 
-Neste caso, o MODEL  é responsável pela LÓGICA DO JOGO
-o Arquivo: Tabuleiro.java
+Neste caso, o MODEL  é responsável pela LÓGICA DO JOGO.
+*o Arquivo: Tabuleiro.java
 Responsabilidades:
 - Controlar o tabuleiro
 - Verificar vitória e empate
@@ -17,7 +18,7 @@ As casas são preenchidas com 'X', 'O' ou '-' (vazio).
 Métodos como marcar(), venceu(), empate() e alternarJogador() definem as regras do jogo.
 
 O VIEW, é reponsável pela INTERFACE COM O USUÁRIO (GUI)
-Arquivo: JogoDaVelhaView.java
+*Arquivo: JogoDaVelhaView.java
 
 Responsabilidades:
 - Mostrar os botões (casas do tabuleiro)
@@ -30,8 +31,8 @@ JLabel mostra o jogador atual.
 Usa JOptionPane para exibir o resultado final.
 Tem métodos como atualizarBotao() e resetarTabuleiro().
 
-E por último o CONTROLLER, responsável pela CONEXÃO ENTRE VIEW E MODEL
-Arquivo: JogoDaVelhaController.java
+E por último o CONTROLLER, responsável pela CONEXÃO ENTRE VIEW E MODEL.
+*Arquivo: JogoDaVelhaController.java
 
 Responsabilidades:
 - Responder ao clique do jogador
